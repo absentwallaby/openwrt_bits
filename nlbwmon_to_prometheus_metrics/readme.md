@@ -12,7 +12,7 @@ instructions adapted from
 * * * * * nlbw -c csv -g ip,mac -o ip | tr -d '"' | tail -n +2 > /tmp/nlbwmon.out
 ```
 
-3. create the following file to /usr/lib/lua/prometheus-collectors/nlbwmon.lua
+3. create the following file with this text /usr/lib/lua/prometheus-collectors/nlbwmon.lua
 ```
 local nlbwstat = {
     "mac",
